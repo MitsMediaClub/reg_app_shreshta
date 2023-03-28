@@ -288,6 +288,8 @@ width: 10rem;
 @media (max-width: ${({ theme }) => theme.media.mobile}){
     .container{
         margin-left:-1rem;
+        width: 39rem;
+        padding-left: 12rem;
     }
 }
 `;
