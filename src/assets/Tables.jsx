@@ -289,7 +289,7 @@ width: 10rem;
     .container{
         margin-left:-1rem;
         width: 39rem;
-        padding-left: 12rem;
+        padding-left: 6rem;
     }
 }
 `;
