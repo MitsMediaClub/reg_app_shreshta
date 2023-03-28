@@ -303,7 +303,7 @@ flex-flow: row nowrap;
 justify-content: center;
 align-items: center;
 width: 100vw;
-margin-top: 5rem;
+margin: 5rem auto;
 }
 .container h1 {
 text-align: center;
