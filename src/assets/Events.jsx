@@ -7,89 +7,6 @@ import "react-confirm-alert/src/react-confirm-alert.css";
 import callApi from "../utils/callApi";
 import ErrorDialogue from "../utils/ErrorDialogue";
 
-const events = [
-    {
-        name: "Auto Expo",
-        status: "yellowm",
-        desc: "See the rarest of the rarest. The luxury car collection of the state is displayed for you to enjoy.",
-        location: "Osama Ground",
-        time: "09:00",
-        img: "./logo.svg",
-        book:"no",
-        exptime:"",
-    },
-    {
-        name: "Music Mania",
-        status: "yellowm",
-        desc: "Breaking the sound barriers, the DJ of Ajagalanda Rocks will take music to the next level. Live. Love. Lie.",
-        location: "Albert Einstein Hall",
-        time: "11:00",
-        img: "./logo.svg",
-      book: "no",
-      exptime: "",
-    },
-    {
-        name: "Auto Expo",
-        status: "greenm",
-        desc: "See the rarest of the rarest. The luxury car collection of the state is displayed for you to enjoy.",
-        location: "Osama Ground",
-        time: "12:30",
-        img: "./logo.svg",
-      book: "no",
-      exptime: "",
-    },
-    {
-        name: "Music Mania",
-        status: "redm",
-        desc: "Breaking the sound barriers, the DJ of Ajagalanda Rocks will take music to the next level. Live. Love. Lie.",
-        location: "Albert Einstein Hall",
-        time: "13:00",
-        img: "./logo.svg",
-      book: "no",
-      exptime: "",
-    },
-    {
-        name: "Auto Expo",
-        status: "redm",
-        desc: "See the rarest of the rarest. The luxury car collection of the state is displayed for you to enjoy.",
-        location: "Osama Ground",
-        time: "15:00",
-        img: "./logo.svg",
-      book: "no",
-      exptime: "",
-    },
-    {
-        name: "Music Mania",
-        status: "redm",
-        desc: "Breaking the sound barriers, the DJ of Ajagalanda Rocks will take music to the next level. Live. Love. Lie.",
-        location: "Albert Einstein Hall",
-        time: "17:30",
-        img: "./logo.svg",
-      book: "no",
-      exptime: "",
-    },
-    {
-        name: "Music Mania",
-        status: "redm",
-        desc: "Breaking the sound barriers, the DJ of Ajagalanda Rocks will take music to the next level. Live. Love. Lie.",
-        location: "Albert Einstein Hall",
-        time: "19:30",
-        img: "./logo.svg",
-      book: "no",
-      exptime: "",
-        
-    },
-    {
-        name: "Music Mania",
-        status: "redm",
-        desc: "Breaking the sound barriers, the DJ of Ajagalanda Rocks will take music to the next level. Live. Love. Lie.",
-        location: "Albert Einstein Hall",
-        time: "21:30",
-        img: "./logo.svg",
-      book: "no",
-      exptime: "",
-    },
-];
 
 const Events = () => {
 
@@ -150,12 +67,18 @@ const Events = () => {
                        {/* <NavLink to="/Events">
                             <Button className="btn" onClick={()=>{submit(value._id)}}>Book</Button>
             </NavLink>*/}
-                        <h4>
-                    {value.exptime}
-                        </h4>
                             <h3 className="loc_field">
                                 {value.location}
                             </h3>
+
+                    <div className="flex items-start w-spx time_field">
+                      <h3 key={i} >
+                          {value?.cordinator[0]?.name}
+                      </h3>
+                      <p key={i} >
+                          {value?.cordinator[0]?.phone}
+                      </p>
+                    </div>     
                     <div className="flex items-start w-spx time_field">
                         <h3 key={i} >
                             {new Date(value.time).toLocaleString()}
