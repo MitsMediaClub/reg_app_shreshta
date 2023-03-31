@@ -100,7 +100,7 @@ function Book() {
                                     <p className='event-title'>{result.name}</p>
                                     <p className='event-price'>{result.description}</p>
                                     <p className='event-price'>Location: {result.location}</p>
-                                    <p className='event-price'>Time: {result.time}</p>
+                                    {/* <p className='event-price'>Time: {result.time}</p> */}
                                     <p className='event-price'>Price: {result.price}</p>
                                 </div>
                                 <Button className="btn User-btn" onClick={submit}>

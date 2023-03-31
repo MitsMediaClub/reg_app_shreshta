@@ -84,11 +84,11 @@ const Events = () => {
                           {value?.cordinator[0]?.phone}
                       </p>
                     </div>     
-                    <div className="flex items-start w-spx time_field">
+                    {/* <div className="flex items-start w-spx time_field">
                         <h3 key={i} >
                             {new Date(value.time).toLocaleString()}
                         </h3>
-                    </div>
+                    </div> */}
                         
                     </div>
                 </div>
