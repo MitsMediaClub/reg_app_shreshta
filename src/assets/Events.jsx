@@ -70,6 +70,11 @@ const Events = () => {
                             <h3 className="loc_field">
                                 {value.location}
                             </h3>
+                            <div className="flex items-start w-spx time_field">
+                      <p key={i} >
+                          Fee : {value?.price}
+                      </p>
+                    </div> 
 
                     <div className="flex items-start w-spx time_field">
                       <h3 key={i} >

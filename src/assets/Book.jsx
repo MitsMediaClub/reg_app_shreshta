@@ -86,7 +86,7 @@ function Book() {
                     {!result && 
                     <div className='section-hero-data'>
                       <QrReader
-                          delay={1000}
+                          delay={500}
                           className={'scanner-box'}
                           onError={handleError}
                           onScan={handleScan}
